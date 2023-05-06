@@ -1,0 +1,53 @@
+<!------------------------------------------------------------------------
+    AUTOR: Juan Elier Rosales Rosas
+    FECHA: 06/05/2023
+    DESCRIPCIÓN: Pagina desarrollada para el programa ONE de oracle + alura
+    con la cual se busca que un mensaje sea encriptado y desencriptado.
+------------------------------------------------------------------------->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Encriptador</title>
+
+	<link rel="stylesheet" type="text/css" href="styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+
+
+	<div class="logo">
+		<img src="rcs/Logo.PNG">
+	</div>
+
+	<div class="contenidos">
+    	<div class="lado-izq">
+      		<div class="form">
+        		<textarea name="mensaje" id="mensaje" cols="30" rows="50" placeholder="Ingresa el texto aqui"></textarea>
+    		</div>
+
+      		<div class="botones">
+        		<div class="advertencia">
+          		<p><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>
+				</div>
+
+        		<div class="caja-btn">
+          			<button class="encriptar">Encriptar</button>
+          			<button class="desencriptar">Desencriptar</button>
+        		</div>
+      		</div>
+    	</div>
+
+    	<div class="lado-der">
+    		<div class="contenido">
+    		</div>
+    	</div>
+	</div>
+
+	<script type="module" src="script.js"></script>
+
+</body>
+</html>
