@@ -1,4 +1,3 @@
-// DECLARANDO EL OBJETO PARA LOS ENCRIPTADOS:
 const claves = {
     a: "ai",
     e: "enter",
@@ -59,10 +58,12 @@ const copiarMensaje = () => {
 function inicializar() {
     contenidoResultado.insertAdjacentHTML("beforeend", `
     <img src="img/Muñeco.png" alt="muñeco">
+
         <div class="mensajes">
           <h1>Ningún mensaje fue encontrado</h1>
           <p>Ingresa el texto que desees encriptar o desencriptar</p>
         </div>
+
     `)
 }
 
