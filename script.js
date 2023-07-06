@@ -57,7 +57,7 @@ const copiarMensaje = () => {
 
 function inicializar() {
     contenidoResultado.insertAdjacentHTML("beforeend", `
-    <img src="img/Muñeco.png" alt="muñeco">
+    <img src="rcs/Muñeco.png" alt="muñeco">
 
         <div class="mensajes">
           <h1>Ningún mensaje fue encontrado</h1>
