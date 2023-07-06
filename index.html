@@ -5,47 +5,61 @@
     con la cual se busca que un mensaje sea encriptado y desencriptado.
 ------------------------------------------------------------------------->
 
-
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-	<meta charset="utf-8">
-	<link rel="shortcut icon" href="img/aluraIco.png">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Encriptador</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="img/aluraIco.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encriptador Alura Challenge LERF</title>
+
+  <!-- Link al style.css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
+  <div class="logo">
+    <img src="img/Logo.png" alt="logo-alura">
+  </div>
 
-	<div class="logo">
-		<img src="img/Logo.PNG" alt="Logo Alura">
-	</div>
+  <div class="contenidos">
+    <div class="lado-izq">
+      <div class="form">
+        <textarea name="mensaje" id="mensaje" cols="30" rows="50" placeholder="Ingresa el texto aqui"></textarea>
+      </div>
 
-	<div class="contenidos">
-    	<div class="izquierda">
-      		<div class="form">
-        		<textarea name="mensaje" id="mensaje" cols="30" rows="50" placeholder="Ingresa el texto aqui"></textarea>
-    		</div>
+      <div class="botones">
+        <div class="advertencia">
+          <p><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>
+        </div>
 
-      		<div class="botones">
-        		<div class="advertencia">
-          		<p><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>
-				</div>
+        <div class="caja-btn">
+          <button class="encriptar">Encriptar</button>
+          <button class="desencriptar">Desencriptar</button>
+        </div>
+      </div>
+    </div>
 
-        		<div class="caja-btn">
-          			<button class="encriptar">Encriptar</button>
-          			<button class="desencriptar">Desencriptar</button>
-        		</div>
-      		</div>
-    	</div>
+    <div class="lado-der">
+      <div class="contenido">
+      </div>
+    </div>
+  </div>
 
-    	<div class="derecha">
-    		<div class="contenido">
-    		</div>
-    	</div>
-	</div>
-	<script type="module" src="script.js"></script>
-
+  <!-- Codigo JS -->
+  <script type="module" src="script.js"></script>
 </body>
+
 </html>
