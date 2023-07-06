@@ -1,3 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
 body {
   background: #e5e5e5;
 }
@@ -119,7 +127,7 @@ textarea::-o-scrollbar-thumb {
   border: solid 1px #0a3871;
 }
 
-.derecha {
+.lado-der {
   position: absolute;
   width: 30%;
   height: 90%;
@@ -130,7 +138,7 @@ textarea::-o-scrollbar-thumb {
   border-radius: 32px;
 }
 
-.derecha.contenido {
+.lado-der .contenido {
   height: 100%;
   display: flex;
   align-items: center;
@@ -138,19 +146,19 @@ textarea::-o-scrollbar-thumb {
   flex-direction: column;
 }
 
-.derecha.contenido .mensajes {
+.lado-der .contenido .mensajes {
   width: 336px;
   height: 122px;
 }
 
-.derecha.contenido .mensajes h1 {
+.lado-der .contenido .mensajes h1 {
   font-weight: 700;
   font-size: 24px;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.derecha.contenido .mensajes p {
+.lado-der .contenido .mensajes p {
   font-weight: 400;
   font-size: 16px;
   text-align: center;
@@ -244,7 +252,7 @@ textarea::-o-scrollbar-thumb {
     gap: 20px;
   }
 
-  .derecha {
+  .lado-der {
     width: 90%;
     height: 23%;
     left: 5.6%;
@@ -261,7 +269,7 @@ textarea::-o-scrollbar-thumb {
     left: 5.7%;
   }
 
-  .derecha {
+  .lado-der {
     left: 4%;
   }
 }
